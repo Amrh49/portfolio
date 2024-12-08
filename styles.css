@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #040422;
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #040422;
+    color: #c4dff0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*jarak antara tombol dan sertifikat*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+/*tampilan tombol sertifikat yang disembunyikan*/
+.gallery a {
+    background-color: #D0E8FF; 
+    color: #0A0A23;
+    font-size: 1rem;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    text-align: center;
+    text-decoration: none; /* menghilangkan underline pada link */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/*interaktif tombol sertifikat yang disembunyikan*/
+.gallery :hover {
+    transform: translateY(-5px);
+    background-color: #c4dff0; /* Warna hover lebih terang */
+}
